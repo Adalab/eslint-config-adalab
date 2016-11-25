@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config-adalab",
+  "version": "0.1.0",
+  "description": "ESLint shareable config for AdaLab apprentices",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint; node test/test.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adalab/eslint-config-adalab.git"
+  },
+  "author": {
+    "name": "Alex Guerrero",
+    "email": "hello@alexguerrero.es"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/adalab/eslint-config-adalab/issues"
+  },
+  "homepage": "https://github.com/adalab/eslint-config-adalab#readme",
+  "devDependencies": {
+    "eslint": "^3.10.2",
+    "eslint-plugin-promise": "^3.4.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.10.2",
+    "eslint-plugin-promise": ">=3.4.0"
+  }
+}

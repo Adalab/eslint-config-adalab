@@ -1,0 +1,118 @@
+'use strict';
+
+const error = 2;
+
+module.exports = {
+  env: {
+    es6: true
+  },
+
+  plugins: [
+    'promise'
+  ],
+
+  rules: {
+    // Possible errors
+    'no-cond-assign': error,
+    'no-constant-condition': [error, {checkLoops: false}],
+    'no-dupe-args': error,
+    'no-dupe-keys': error,
+    'no-duplicate-case': error,
+    'no-empty': error,
+    'no-ex-assign': error,
+    'no-extra-boolean-cast': error,
+    'no-extra-parens': [error, 'all', {"conditionalAssign": false, "returnAssign": false}],
+    'no-extra-semi': error,
+    'no-func-assign': error,
+    'no-inner-declarations': error,
+    'no-invalid-regexp': error,
+    'no-irregular-whitespace': error,
+    'no-obj-calls': error,
+    'no-regex-spaces': error,
+    'no-sparse-arrays': error,
+    'no-template-curly-in-string': error,
+    'no-unexpected-multiline': error,
+    'no-unreachable': error,
+    'no-unsafe-finally': error,
+    'no-unsafe-negation': error,
+    'use-isnan': error,
+    'valid-typeof': error,
+
+    // Best practices
+    'array-callback-return': error,
+    'block-scoped-var': error,
+    'complexity': [error, 8],
+    'consistent-return': error,
+    'curly': [error, 'multi', 'consistent'],
+    'default-case': error,
+    'eqeqeq': ['error', 'smart'],
+    'no-caller': error,
+    'no-case-declarations': error,
+    'no-extra-bind': error,
+    'no-extra-label': error,
+    'no-fallthrough': [error, { "commentPattern": "break[\\s\\w]*omitted" }],
+    'no-invalid-this': error,
+    'no-iterator': error,
+    'no-labels': error,
+    'no-lone-blocks': error,
+    'no-multi-spaces': error,
+    'no-multi-str': error,
+    'no-new-func': error,
+    'no-new-wrappers': error,
+    'no-octal': error,
+    'no-proto': error,
+    'no-redeclare': error,
+    'no-self-assign': error,
+    'no-throw-literal': error,
+    'no-useless-call': error,
+    'no-useless-concat': error,
+    'no-useless-escape': error,
+    'no-useless-return': error,
+    'no-with': error,
+    'wrap-iife': error,
+    'yoda': error,
+
+    // Strict mode
+    'strict': [error, 'global'],
+
+    // Variables
+    'no-undef': error,
+    'no-undefined': error,
+    'no-unused-vars': error,
+    'no-use-before-define': ['error', {'functions': false}],
+
+    // Stylistic Issues
+    'eol-last': error,
+    'func-name-matching': error,
+    'func-names': [error, 'as-needed'],
+    'linebreak-style': ['error', 'unix'],
+    'max-depth': [error, 6],
+    'max-nested-callbacks': [error, 6],
+    'max-params': [error, 4],
+    'no-lonely-if': error,
+    'no-mixed-spaces-and-tabs': ["error", "smart-tabs"],
+    'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
+    'no-trailing-spaces': error,
+    'no-unneeded-ternary': error,
+    'semi': [error, 'always'],
+
+    // ECMAScript 6
+    'no-empty-pattern': error,
+    'class-methods-use-this': error,
+    'no-class-assign': error,
+    'no-const-assign': error,
+    'no-dupe-class-members': error,
+    'no-new-symbol': error,
+    'no-this-before-super': error,
+    'no-useless-computed-key': error,
+    'no-useless-constructor': error,
+    'no-useless-rename': error,
+    'require-yield': error,
+    'symbol-description': error,
+
+    // Promises
+    'promise/catch-or-return': error,
+    'promise/always-return': error,
+    'param-names': error
+  }
+};
