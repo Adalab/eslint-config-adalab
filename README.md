@@ -8,7 +8,7 @@ Esta configuración solo presta atención a fallos comunes, posibles errores y b
 ## Instalación
 
 ```
-$ npm install --save-dev eslint eslint-config-adalab
+$ npm install --save-dev eslint eslint-plugin-promise eslint-config-adalab
 ```
 
 
