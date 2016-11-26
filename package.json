@@ -16,6 +16,9 @@
     "email": "hello@alexguerrero.es"
   },
   "license": "Unlicense",
+  "files": [
+    "*.js"
+  ],
   "bugs": {
     "url": "https://github.com/adalab/eslint-config-adalab/issues"
   },
