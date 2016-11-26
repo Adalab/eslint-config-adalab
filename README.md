@@ -2,6 +2,8 @@
 
 > Configuración de [ESLint](http://eslint.org) usada por las participantes de [AdaLab](http://adalab.es/)
 
+Esta configuración solo presta atención a fallos comunes, posibles errores y buenas prácticas, dejando al usuario escoger el estilo que prefiera para su código.
+
 
 ## Instalación
 
