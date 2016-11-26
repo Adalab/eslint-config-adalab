@@ -89,6 +89,7 @@ module.exports = {
     'max-depth': [error, 6],
     'max-nested-callbacks': [error, 6],
     'max-params': [error, 4],
+    'max-statements-per-line': error,
     'no-lonely-if': error,
     'no-mixed-spaces-and-tabs': ["error", "smart-tabs"],
     'no-plusplus': ["error", { "allowForLoopAfterthoughts": true }],
