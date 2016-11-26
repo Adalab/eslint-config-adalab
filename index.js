@@ -113,6 +113,6 @@ module.exports = {
     // Promises
     'promise/catch-or-return': error,
     'promise/always-return': error,
-    'param-names': error
+    'promise/param-names': error
   }
 };
