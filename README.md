@@ -1,4 +1,4 @@
-# eslint-config-adalab
+# eslint-config-adalab [![Build Status](https://travis-ci.org/Adalab/eslint-config-adalab.svg?branch=master)](https://travis-ci.org/Adalab/eslint-config-adalab)
 
 > Configuración de [ESLint](http://eslint.org) usada por las participantes de [AdaLab](http://adalab.es/)
 
