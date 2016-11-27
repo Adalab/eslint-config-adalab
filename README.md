@@ -48,4 +48,4 @@ Para ver que reglas contiene la configuración de `adalab`, puedes visitar el [c
 
 ## Licencia
 
-[Unlicense](https://github.com/google/eslint-config-google/blob/master/LICENSE)
+[Unlicense](https://github.com/adalab/eslint-config-adalab/blob/master/LICENSE)
