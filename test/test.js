@@ -1,30 +1,34 @@
 'use strict';
 
-const assert = require('assert');
-const eslint = require('eslint');
-const fs = require('fs');
-const path = require('path');
+var path = require('path');
+var eslint = require('eslint');
 
-const repoRootPath = path.resolve(__dirname, '../');
-const testFile = path.join(__dirname, 'fixtures', 'sample.js');
+var repoRootPath = path.resolve(__dirname, '..');
+var eslintrcFile = path.join(repoRootPath, 'index.js');
 
-function getEslintrcFiles() {
-  return fs.readdirSync(repoRootPath)
-  .filter(file => path.extname(file) === '.js');
+function printError(error) {
+  var errorInfo = error.name === 'ESLintError' ? error.message : error.stack;
+
+  console.log(errorInfo);
+  process.exit(1);
 }
 
-function testEslintrcFile(eslinrcFile) {
-  const options = {
-    envs: ['node', 'es6'],
+function testEslintrcFile(file) {
+  var options = {
     useEslintrc: false,
-    configFile: path.resolve(__dirname, '..', eslinrcFile)
+    configFile: file
   };
 
-  const report = new eslint.CLIEngine(options).executeOnFiles([testFile]);
+  var cli = new eslint.CLIEngine(options);
+  var report = cli.executeOnText('// Sample file\n', file);
+  var formatter = cli.getFormatter();
+  var result = formatter(report.results);
 
-  assert.equal(report.errorCount, 0);
-  assert.equal(report.warningCount, 0);
-  assert(report.results[0].filePath.endsWith(testFile));
+  if (result.length !== 0) {
+    var error = new Error(result);
+    error.name = 'ESLintError';
+    printError(error);
+  }
 }
 
-getEslintrcFiles().forEach(file => testEslintrcFile(file));
+testEslintrcFile(eslintrcFile);
