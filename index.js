@@ -123,7 +123,7 @@ module.exports = {
     'no-trailing-spaces': error,
     'no-unneeded-ternary': error,
     'quote-props': ['error', 'as-needed', {unnecessary: false, numbers: true}],
-    'semi': [error, 'always'],
+    'semi': [error, 'never'],
 
     // ECMAScript 6
     'no-empty-pattern': error,
