@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const error = 2;
+const error = 2
 
 module.exports = {
   env: {
@@ -147,4 +147,4 @@ module.exports = {
     'promise/always-return': error,
     'promise/param-names': error
   }
-};
+}
