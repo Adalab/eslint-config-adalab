@@ -44,7 +44,7 @@ module.exports = {
     'block-scoped-var': error,
     'complexity': [error, 8],
     'consistent-return': error,
-    'curly': [error, 'multi', 'consistent'],
+    'curly': [error, 'multi-line', 'consistent'],
     'default-case': error,
     'eqeqeq': ['error', 'smart'],
     'no-caller': error,
