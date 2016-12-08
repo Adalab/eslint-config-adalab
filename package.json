@@ -4,7 +4,7 @@
   "description": "ESLint shareable config for AdaLab apprentices",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint; node test/test.js",
+    "test": "npm run lint",
     "lint": "eslint ."
   },
   "repository": {
