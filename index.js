@@ -1,6 +1,8 @@
-'use strict'
+'use strict';
 
-const error = 2
+const off = 0;
+const warning = 1;
+const error = 2;
 
 module.exports = {
   env: {
@@ -42,7 +44,7 @@ module.exports = {
     // Best practices
     'array-callback-return': error,
     'block-scoped-var': error,
-    'complexity': [error, 8],
+    'complexity': [warning, 8],
     'consistent-return': error,
     'curly': [error, 'multi-line', 'consistent'],
     'default-case': error,
@@ -79,7 +81,7 @@ module.exports = {
     'yoda': error,
 
     // Strict mode
-    'strict': [error, 'global'],
+    'strict': [off, 'global'],
 
     // Variables
     'no-delete-var': error,
@@ -93,7 +95,7 @@ module.exports = {
     // Stylistic Issues
     'eol-last': error,
     'func-name-matching': error,
-    'func-names': [error, 'as-needed'],
+    'func-names': [off, 'as-needed'],
     'indent': ['error', 2],
     'linebreak-style': ['error', 'unix'],
     'max-depth': [error, 6],
@@ -147,4 +149,4 @@ module.exports = {
     'promise/always-return': error,
     'promise/param-names': error
   }
-}
+};

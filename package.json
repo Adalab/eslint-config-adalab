@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/adalab/eslint-config-adalab#readme",
   "devDependencies": {
-    "eslint": "^3.10.2",
-    "eslint-plugin-promise": "^3.4.0"
+    "eslint": "^3.19.0",
+    "eslint-plugin-promise": "^3.5.0"
   },
   "peerDependencies": {
-    "eslint": ">=3.10.2",
-    "eslint-plugin-promise": ">=3.4.0"
+    "eslint": ">=3.19.0",
+    "eslint-plugin-promise": ">=3.5.0"
   }
 }
