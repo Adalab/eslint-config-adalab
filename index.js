@@ -117,7 +117,7 @@ module.exports = {
     'no-array-constructor': error,
     'no-lonely-if': error,
     'no-mixed-spaces-and-tabs': [error, 'smart-tabs'],
-    'no-multiple-empty-lines': [error, { 'max': 2 }],
+    'no-multiple-empty-lines': [error, { 'max': 3 }],
     'no-negated-condition': error,
     'no-new-object': error,
     'no-plusplus': [error, { allowForLoopAfterthoughts: true }],
