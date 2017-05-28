@@ -25,10 +25,10 @@
   "homepage": "https://github.com/adalab/eslint-config-adalab#readme",
   "devDependencies": {
     "eslint": ">=3.10.0 <4.0.0",
-    "eslint-plugin-promise": ">=3.0.1 <3.5.0"
+    "eslint-plugin-promise": ">=3.0.1 <3.6.0"
   },
   "peerDependencies": {
     "eslint": ">=3.10.0 <4.0.0",
-    "eslint-plugin-promise": ">=3.0.1 <3.5.0"
+    "eslint-plugin-promise": ">=3.0.1 <3.6.0"
   }
 }
