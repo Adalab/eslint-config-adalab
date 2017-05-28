@@ -48,7 +48,7 @@ module.exports = {
     'consistent-return': error,
     'curly': [error, 'multi-line', 'consistent'],
     'default-case': error,
-    'eqeqeq': ['error', 'smart'],
+    'eqeqeq': [error, 'smart'],
     'no-caller': error,
     'no-case-declarations': error,
     'no-extra-bind': error,
@@ -90,23 +90,23 @@ module.exports = {
     'no-undef': error,
     'no-undefined': error,
     'no-unused-vars': error,
-    'no-use-before-define': ['error', {'functions': false}],
+    'no-use-before-define': [error, {'functions': false}],
 
     // Stylistic Issues
     'eol-last': error,
     'func-name-matching': error,
     'func-names': [off, 'as-needed'],
-    'indent': ['error', 2],
-    'linebreak-style': ['error', 'unix'],
+    'indent': [error, 2],
+    'linebreak-style': [error, 'unix'],
     'max-depth': [error, 6],
-    'max-len': ['error', 100, 2, {
+    'max-len': [error, 100, 2, {
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
     }],
-    'max-lines': ['error', {
+    'max-lines': [error, {
       max: 512,
       skipBlankLines: true,
       skipComments: true
@@ -117,14 +117,14 @@ module.exports = {
     'no-array-constructor': error,
     'no-lonely-if': error,
     'no-mixed-spaces-and-tabs': [error, 'smart-tabs'],
-    'no-multiple-empty-lines': ['error', { 'max': 2 }],
+    'no-multiple-empty-lines': [error, { 'max': 2 }],
     'no-negated-condition': error,
     'no-new-object': error,
     'no-plusplus': [error, { allowForLoopAfterthoughts: true }],
     'no-tabs': error,
     'no-trailing-spaces': error,
     'no-unneeded-ternary': error,
-    'quote-props': ['error', 'as-needed', {unnecessary: false, numbers: true}],
+    'quote-props': [error, 'as-needed', {unnecessary: false, numbers: true}],
     'semi': [error, 'always'],
 
     // ECMAScript 6
