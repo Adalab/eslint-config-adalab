@@ -99,7 +99,7 @@ module.exports = {
     'indent': [error, 2],
     'linebreak-style': [error, 'unix'],
     'max-depth': [error, 6],
-    'max-len': [error, 100, 2, {
+    'max-len': [warning, 100, 2, {
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
@@ -146,7 +146,7 @@ module.exports = {
 
     // Promises
     'promise/catch-or-return': error,
-    'promise/always-return': error,
+    'promise/always-return': warning,
     'promise/param-names': error
   }
 };
