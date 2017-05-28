@@ -81,7 +81,7 @@ module.exports = {
     'yoda': error,
 
     // Strict mode
-    'strict': [off, 'global'],
+    'strict': [error, 'global'],
 
     // Variables
     'no-delete-var': error,
